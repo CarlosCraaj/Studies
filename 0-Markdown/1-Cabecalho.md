@@ -29,5 +29,5 @@ Markdown:
 ###### Cabecalho 6
 ```
 
-# VOLTAR SUMÁRIO
+# Voltar Sumário
 ## [Sumario](0-Sumario)

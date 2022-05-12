@@ -22,5 +22,5 @@ Markdown:
 ```
 
 
-# VOLTAR SUMÁRIO
+# Voltar Sumário
 ## [Sumario](0-Sumario)

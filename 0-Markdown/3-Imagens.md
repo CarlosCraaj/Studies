@@ -16,5 +16,5 @@ Pode ser usado também imagem no estilo HTML:
 
 <img src="imgs/php-logo.png" alt="Logo PHP" width="100px" height="100px">
 
-# VOLTAR SUMÁRIO
+# Voltar Sumário
 ## [Sumario](0-Sumario)
