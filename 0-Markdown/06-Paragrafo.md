@@ -15,4 +15,4 @@ Uma linha aqui está, a ser separada por essa linguagem de marcação. Mais text
 A segunda linha aqui está, sendo separada por essa linguagem de marcação. Mais textos aqui inserado para mostrar como, ocorre a formatação desse recurso de tal linguagem.
 
 # Voltar Sumário
-## [Sumario](0-Sumario.md)
+## [Sumario](00-Sumario.md)
