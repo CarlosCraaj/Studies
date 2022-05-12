@@ -4,9 +4,13 @@ Para organizar uma lista de afazeres por exemplo, usa-se a seguinte notação `-
 ```
 Markdown: 
 - [x] Estudar Markdown
-- [] Estudar PHP
-- [] Estudar JavaScript
+- [ ] Estudar PHP
+- [ ] Estudar JavaScript
 ```
+
+- [x] Estudar Markdown
+- [ ] Estudar PHP
+- [ ] Estudar JavaScript
 
 # Voltar Sumário
 ## [Sumario](0-Sumario.md)
