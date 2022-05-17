@@ -31,4 +31,4 @@ $ php Primeiros_Passos_POO-1.php
 Nome: Maria
 ```
 
-Diretório do [Código Acima](Codigos/Primeiros_Passos_POO-1.php) para executar e testar.
+[Código Acima](Codigos/Primeiros_Passos_POO-1.php)
