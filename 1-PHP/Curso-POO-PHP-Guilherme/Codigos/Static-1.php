@@ -1,4 +1,19 @@
 <?php
+
+class SiteInfo
+{
+    public static $nome= "Meu Site";
+    public static $descricao= "Site de Vendas";
+}
+
+class Util
+{
+    public static function trataValor($valor)
+    {
+        return "R$ ".number_format($valor,2,',','.');
+    }
+}
+
 interface IUsuario 
 {
     public function alteraSenha($senha);
@@ -98,7 +113,8 @@ class Assinatura
         $html .= "<b>Id: </b>$this->id<br>";
         $html .= "<b>Id co Cliente: </b>".$this->id_cliente."<br>";
         $html .= "<b>Título: </b>".$this->titulo."<br>";
-        $html .= "<b>Valor: </b>".$this->trataValor($this->valor);
+        // $html .= "<b>Valor: </b>".$this->trataValor($this->valor);
+        $html .= "<b>Valor: </b>".Util::trataValor($this->valor);
         $html .= "</p>";
 
         echo $html;
@@ -177,5 +193,8 @@ $gustavo->nome = "Gustavo";
 $gustavo->email = "gustavo@email.com";
 $gustavo->telefone = "234423432";
 $gustavo->alteraSenha('23456');
+
+echo 'Nome do site: '.SiteInfo::$nome . PHP_EOL;
+echo 'Descrição do site: '.SiteInfo::$descricao . PHP_EOL;
 
 ?>
