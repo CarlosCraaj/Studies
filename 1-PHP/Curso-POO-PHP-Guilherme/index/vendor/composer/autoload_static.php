@@ -4,9 +4,26 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit75391f9d26631e1f1707d427d58c7395
+class ComposerStaticInitd90c06b9f778f25f6e8b445518b6b511
 {
+    public static $files = array (
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Slim\\' => 5,
+        ),
+        'P' => 
+        array (
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Container\\' => 14,
+        ),
+        'F' => 
+        array (
+            'FastRoute\\' => 10,
+        ),
         'C' => 
         array (
             'Config\\' => 7,
@@ -18,6 +35,22 @@ class ComposerStaticInit75391f9d26631e1f1707d427d58c7395
     );
 
     public static $prefixDirsPsr4 = array (
+        'Slim\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/slim/Slim',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'FastRoute\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
         'Config\\' => 
         array (
             0 => __DIR__ . '/../..' . '/config',
@@ -28,6 +61,16 @@ class ComposerStaticInit75391f9d26631e1f1707d427d58c7395
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'Pimple' => 
+            array (
+                0 => __DIR__ . '/..' . '/pimple/pimple/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
@@ -35,9 +78,10 @@ class ComposerStaticInit75391f9d26631e1f1707d427d58c7395
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit75391f9d26631e1f1707d427d58c7395::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit75391f9d26631e1f1707d427d58c7395::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit75391f9d26631e1f1707d427d58c7395::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd90c06b9f778f25f6e8b445518b6b511::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd90c06b9f778f25f6e8b445518b6b511::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitd90c06b9f778f25f6e8b445518b6b511::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitd90c06b9f778f25f6e8b445518b6b511::$classMap;
 
         }, null, ClassLoader::class);
     }
