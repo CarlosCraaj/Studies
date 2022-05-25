@@ -1,5 +1,6 @@
 # Herança
-A Herança resolve o problema da repetição de códigos que usam os mesmos atributos. Por exemplo, uma classe usuário que possui os atributos: `id, nome, email, senha e telefone`. Uma classe Gerente herda esses atributos, pois antes de tudo é um usuário.
+A Herança resolve o problema da repetição de códigos que usam os mesmos atributos. Por exemplo, uma classe usuário que possui os atributos: `id, nome, email, senha e telefone`. Uma classe Gerente herda esses atributos, pois antes de tudo é um usuário.  
+Na Herança podemos chamar as classes que transferem atributos e etc, como classes `Pai ou Super`, e as que recebem, como `filho ou sub Classes`.
 
 Para usar o conceito de herança, usamos a palavra reserva `extends`, exemplo: `class Gerente exteds Usuario`.
 
