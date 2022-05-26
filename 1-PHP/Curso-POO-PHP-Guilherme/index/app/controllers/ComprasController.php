@@ -15,7 +15,7 @@ class ComprasController extends Controlle
     
         $this->compras = $compras;
 
-        return $this->view('home', $response);
+        return $this->view('compras/index', $response);
     }
 
 }
