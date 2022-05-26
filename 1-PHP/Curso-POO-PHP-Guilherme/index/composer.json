@@ -13,6 +13,6 @@
         "slim/slim": "3.*"
     },
     "autoload": {
-        "psr-4": {"App\\": "app/", "Config\\": "config/"}
+        "psr-4": {"App\\": "app/", "Config\\": "config/", "Helpers\\": "config/"}
     }
 }

@@ -9,6 +9,7 @@ return array(
     'Slim\\' => array($vendorDir . '/slim/slim/Slim'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
+    'Helpers\\' => array($baseDir . '/config'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
     'Config\\' => array($baseDir . '/config'),
     'App\\' => array($baseDir . '/app'),

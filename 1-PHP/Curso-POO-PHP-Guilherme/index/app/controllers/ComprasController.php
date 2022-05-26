@@ -17,5 +17,30 @@ class ComprasController extends Controlle
 
         return $this->view('compras/index', $response);
     }
+    
+    public function adicionar(ServerRequestInterface $request, ResponseInterface $response)
+    {
+
+
+        return $this->view('compras/create', $response);
+    }
+    
+    public function salvar(ServerRequestInterface $request, ResponseInterface $response)
+    {
+        $dados = $request->getParsedBody();
+        $compra = new Compra;
+        $compra->titulo = $dados['titulo'];
+        $compra->desc = $dados['desc'];
+        $idCompra = $compra->save();
+
+        if($idCompra){
+            //sucesso
+        }else{
+            //erro
+        }
+
+        return $response->withRedirect('/compras');
+
+    }
 
 }

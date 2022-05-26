@@ -10,4 +10,8 @@ use App\controllers\ComprasController;
 $app = new App;
 
 $app->get('/', ComprasController::class . ':index');
+$app->get('/compras', ComprasController::class . ':index');
+$app->get('/compras/adicionar', ComprasController::class . ':adicionar');
+$app->post('/compras', ComprasController::class . ':salvar') ;
+
 $app->run();
