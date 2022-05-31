@@ -17,7 +17,6 @@ class Model
 
     static public function find(int $id)
     {
-        // echo "<script>console.log($id)</script>";
         $obj = new static;
         $conn = Db::conexao();
         $select = "select * from {$obj->table} where {$obj->primary_key}=:id LIMIT 1";
