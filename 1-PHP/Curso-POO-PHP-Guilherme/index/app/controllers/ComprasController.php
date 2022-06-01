@@ -36,9 +36,10 @@ class ComprasController extends Controlle
     {
         $dados = $request->getParsedBody();
         $compra = new Compra;
+        
         $compra->titulo = $dados['titulo'];
         $compra->desc = $dados['desc'];
-        $idCompra = $compra->save();
+        $objCompra = $compra->save();
 
         if($idCompra){
             //sucesso
@@ -62,19 +63,14 @@ class ComprasController extends Controlle
     public function atualizar(ServerRequestInterface $request, ResponseInterface $response)
     {
         $dados = $request->getParsedBody();
-        var_dump($dados);exit;
+        $id = $request->getAttribute('id');
+        $compra = Compra::find($id);
 
         // $compra = new Compra;
         
         $compra->titulo = $dados['titulo'];
         $compra->desc = $dados['desc'];
-        $idCompra = $compra->save();
-
-        if($idCompra){
-            //sucesso
-        }else{
-            //erro
-        }
+        $objCompra = $compra->save();
 
         return $response->withRedirect('/compras');
     }

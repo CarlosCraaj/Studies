@@ -34,6 +34,33 @@ class Model
     {
         $atributos = get_object_vars($this);
         unset($atributos['table']);
+        unset($atributos['primary_key']);
+
+        if(isset($this->{$this->primary_key})){
+            //atualizar o registro
+            $coluna = "";
+            $aux = true;
+            unset($atributos[$this->primary_key]);
+
+            foreach ($atributos as $key => $value) {
+                if ($aux) {
+                    $aux = false;
+                    $coluna .= "`$key` = :$key";
+                }else {
+                    $coluna .= ", `$key` = :$key";
+                }
+            }
+            $update = "UPDATE `{$this->table}` SET {$coluna} WHERE `{$this->primary_key}`=:id;";
+
+            $conn = DB::conexao();
+            $stmt = $conn->prepare($update);
+            foreach ($atributos as $key => $value) {
+                $stmt->bindValue(':'.$key,$value);
+            }
+            $stmt->bindValue(':id',$this->{$this->primary_key});
+            $stmt->execute();
+            return $this;
+        }
 
         $col = "(";
         $val = "(";
@@ -58,8 +85,9 @@ class Model
             $stmt->bindValue(':'.$key,$value);
             // $stmt->bindParam(':'.$key,$atributos[$key]);
         }
+
         $stmt->execute();
-        return $conn->lastInsertId();
+        return $this::find($conn->lastInsertId());
 
     }
 }
