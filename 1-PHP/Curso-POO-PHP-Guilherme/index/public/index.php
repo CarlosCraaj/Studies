@@ -7,7 +7,17 @@ use Psr\Http\Message\ResponseInterface;
 use Slim\App;
 use App\controllers\ComprasController;
 
-$app = new App;
+// $app = new App;
+
+$app = new App([
+
+    'settings'=> [
+        'displayErrorDetails'   => true,
+        'debug'                 => true,
+        'whoops.editor'         => 'code',
+    ]
+    
+]);
 
 $app->get('/', ComprasController::class . ':index');
 $app->get('/compras', ComprasController::class . ':index');
