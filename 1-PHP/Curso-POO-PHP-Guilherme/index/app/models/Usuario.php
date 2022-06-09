@@ -1,8 +1,8 @@
 <?php
 namespace App\Models;
 
-class Compra extends Model
+class Usuario extends Model
 {
-    protected $table = "compras";
+    protected $table = "usuarios";
     protected $primary_key = "id";
 }

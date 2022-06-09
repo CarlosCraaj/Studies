@@ -1,4 +1,4 @@
-<?php $this->tituloPagina = "Adicionar Compras" ?>
+<?php $this->tituloPagina = "Editar Compras" ?>
 
 <?php $this->layout('layout.topo'); ?>
     <h2>Editar</h2>
