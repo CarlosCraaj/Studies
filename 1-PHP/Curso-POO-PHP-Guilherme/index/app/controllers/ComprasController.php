@@ -7,7 +7,15 @@ use App\models\Compra;
 
 class ComprasController extends Controlle
 {
-    
+    public function __construct()
+    {
+        session_start();
+        if(!isset($_SESSION['id'])){
+            header("Location: /login");
+            die();
+        }
+        
+    }
 
     public function index(ServerRequestInterface $request, ResponseInterface $response)
     {
