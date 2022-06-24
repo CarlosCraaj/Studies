@@ -5,11 +5,29 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'dd144a6bd5ee3b0dd8b4d99a9af0c4e6894e771f',
+        'reference' => 'd36994306f793952f3e7a341b7d0071259c6d280',
         'name' => 'windows/curso-poo-php-guilherme',
         'dev' => true,
     ),
     'versions' => array(
+        'almasaeed2010/adminlte' => array(
+            'pretty_version' => 'v2.4.3',
+            'version' => '2.4.3.0',
+            'type' => 'template',
+            'install_path' => __DIR__ . '/../almasaeed2010/adminlte',
+            'aliases' => array(),
+            'reference' => 'b3acb63ac56b13eb45b36e628b384a9a2507b50e',
+            'dev_requirement' => false,
+        ),
+        'composer/installers' => array(
+            'pretty_version' => '1.x-dev',
+            'version' => '1.9999999.9999999.9999999-dev',
+            'type' => 'composer-plugin',
+            'install_path' => __DIR__ . '/./installers',
+            'aliases' => array(),
+            'reference' => '894a0b5c5d34c88b69b097f2aae1439730fa6836',
+            'dev_requirement' => false,
+        ),
         'nikic/fast-route' => array(
             'pretty_version' => 'v1.x-dev',
             'version' => '1.9999999.9999999.9999999-dev',
@@ -54,6 +72,18 @@
                 0 => '1.0',
             ),
         ),
+        'roundcube/plugin-installer' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
+        ),
+        'shama/baton' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
+        ),
         'slim/slim' => array(
             'pretty_version' => '3.x-dev',
             'version' => '3.9999999.9999999.9999999-dev',
@@ -69,7 +99,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'dd144a6bd5ee3b0dd8b4d99a9af0c4e6894e771f',
+            'reference' => 'd36994306f793952f3e7a341b7d0071259c6d280',
             'dev_requirement' => false,
         ),
     ),

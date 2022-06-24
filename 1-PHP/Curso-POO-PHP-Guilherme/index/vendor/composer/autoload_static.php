@@ -31,6 +31,7 @@ class ComposerStaticInitd90c06b9f778f25f6e8b445518b6b511
         'C' => 
         array (
             'Config\\' => 7,
+            'Composer\\Installers\\' => 20,
         ),
         'A' => 
         array (
@@ -53,7 +54,7 @@ class ComposerStaticInitd90c06b9f778f25f6e8b445518b6b511
         ),
         'Helpers\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/config',
+            0 => __DIR__ . '/../..' . '/Helpers',
         ),
         'FastRoute\\' => 
         array (
@@ -62,6 +63,10 @@ class ComposerStaticInitd90c06b9f778f25f6e8b445518b6b511
         'Config\\' => 
         array (
             0 => __DIR__ . '/../..' . '/config',
+        ),
+        'Composer\\Installers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
         'App\\' => 
         array (
