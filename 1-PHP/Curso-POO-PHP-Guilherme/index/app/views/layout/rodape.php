@@ -13,9 +13,9 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo \Helpers\Util::asset('assets/dist/js/demo.js') ?>"></script>
 <script>
-  $(document).ready(function () {
-    $('.sidebar-menu').tree()
-  })
+    $(document).ready(function () {
+        $('.sidebar-menu').tree()
+    })
 </script>
 </body>
 </html>

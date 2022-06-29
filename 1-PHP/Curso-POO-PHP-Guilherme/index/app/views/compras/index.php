@@ -2,9 +2,19 @@
 
 <?php $this->layout('layout.topo'); ?>
     
-        <div class="row">
-            <h2>Lista de Compras</h2>
-        </div>
+    <section class="content-header">
+        <h1>
+            Lista de Compras
+            <small>it all starts here</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">Examples</a></li>
+            <li class="active">Blank page</li>
+        </ol>
+    </section>   
+    <section class="content">
+
 
         <div class="row">
             <a href="/compras/adicionar">Criar</a>
@@ -25,8 +35,7 @@
                     </li>
                 <?php endforeach ?>
             </ul>
-        
-        
-    </div>    
+        </div>
+    </section>     
 
 <?php $this->layout('layout.rodape'); ?>
