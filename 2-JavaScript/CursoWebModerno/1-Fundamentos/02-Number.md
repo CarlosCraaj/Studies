@@ -37,6 +37,14 @@ console.log(typeof Number); // function
 ``` 
 Todos os trechos de códigos acima, estão no Arquivo: [numeros.js](/2-JavaScript/CursoWebModerno/1-Fundamentos/Exemplos/numeros.js)
 
+----
+## Alguns Cuidados
+Para se trabalhar com `Number` em JavaScript, é necessário ter alguns cuidados. Pois ele pode por exemplo fazer que uma operação que envolva uma `string numérica`, possa efetuar uma operação matemática com um `Number`, ex:`"10"/2`.  
+Alguns outros exemplos de cuidados estão no Arquivo: [numerosAlgunsCuidados](/2-JavaScript/CursoWebModerno/1-Fundamentos/Exemplos/numerosAlgunsCuidados.js) 
 
+----
+## Usando Math
+No JavaScript para usar alguns métodos prontos para ajudar em operações matemáticas, existe o `Math`. Ele possui métodos/constantes para por exemplo pegar o número de "PI", calcular a potência e etc.  
+Alguns Exemplos em: [math](/2-JavaScript/CursoWebModerno/1-Fundamentos/Exemplos/math.js)
 
-Ir para: []()
+Ir para: [1.3 Tipos em JS: String](02-String.md)
