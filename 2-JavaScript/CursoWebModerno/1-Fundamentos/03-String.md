@@ -17,3 +17,5 @@ Exemplo:
 ```js
 console.log(`1 + 1 = ${1 + 1}`);
 ``` 
+
+Ir para: [1.4 Tipos em JavaScript: Array](04-Array.md)
