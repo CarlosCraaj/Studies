@@ -13,3 +13,7 @@ const valores = [6, 5, 9, 10]; // [0] = 6, [1] = 5 ...
 - Temos também o método `pop()` que retira o último elemento do Array.
 - Existe a palavra reservada `delete`, que remove um elemento do Array.
 - Array em JavaScript é do tipo `object`.
+
+Exemplos de código em: [array](Exemplos/arrays.js)
+
+Ir para: [1.5 Tipos em JavaScript: Object](05-Object.md)

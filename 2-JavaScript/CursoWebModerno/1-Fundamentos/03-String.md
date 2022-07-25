@@ -8,7 +8,7 @@ Uma String é delimitado por aspas duplas `""` e por aspas simples `''`, também
 - O Método `replace()` troca a primeira pesquisa de uma substring na string a ser buscada, para uma string/caractere que queremos trocar. Também pode ser usado regex, que ai podemos trocar todas as ocorrências que queiramos.
 - Para separar uma string em uma array, usamos o métood `split()`.
 
-Exemplos no Arquivo: [strings](/2-JavaScript/CursoWebModerno/1-Fundamentos/Exemplos/strings.js)
+Exemplos no Arquivo: [strings](Exemplos/strings.js)
 
 ----
 ## Template Strings

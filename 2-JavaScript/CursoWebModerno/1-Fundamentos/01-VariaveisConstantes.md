@@ -20,7 +20,7 @@ console.log(a,b); // 300 400
 const c = 5;
 console.log(c); // 50
 ```
-Arquivo encontrado em: [variaveisEConstantes.js](/2-JavaScript/CursoWebModerno/1-Fundamentos/Exemplos/variaveisEConstantes.js)  
+Arquivo encontrado em: [variaveisEConstantes.js](Exemplos/variaveisEConstantes.js)  
 
 No exemplo acima foi visto que "redeclaramos" `var a`, mas o mesmo não acontece para `let b`. Pois o `var` é possível redeclarar uma variável dentro de um mesmo escopo.  
 
