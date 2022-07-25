@@ -14,6 +14,6 @@ const valores = [6, 5, 9, 10]; // [0] = 6, [1] = 5 ...
 - Existe a palavra reservada `delete`, que remove um elemento do Array.
 - Array em JavaScript é do tipo `object`.
 
-Exemplos de código em: [array](Exemplos/arrays.js)
+Exemplos de código em: [array.js](Exemplos/arrays.js)
 
 Ir para: [1.5 Tipos em JavaScript: Object](05-Object.md)
