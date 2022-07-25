@@ -5,6 +5,6 @@
 - Um Objeto pode ter outro objeto dentro dele.
 - JSON não é a mesma coisa do que objeto.
 
-Exemplos de código em: [objeto](Exemplos/objeto.js)
+Exemplos de código em: [objeto.js](Exemplos/objeto.js)
 
 Ir para: [Entendendo o Null & Undefined](06-Null-Undefined.md)
