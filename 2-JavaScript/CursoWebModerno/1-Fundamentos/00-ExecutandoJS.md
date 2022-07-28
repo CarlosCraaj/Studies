@@ -13,4 +13,4 @@ Também é possível executar os códigos usando o console do browser, que é ac
 
 E outra forma é executar através do terminal, mas para isso precisa ter o NodeJS instalado. Para executar um arquivo basta usar o seguinte comando: `node arquivo.js`
 
-Ir para: [3.1 Variáveis e Constantes](01-VariaveisConstantes.md)
+Ir para: [1.1 Variáveis e Constantes](01-VariaveisConstantes.md)
